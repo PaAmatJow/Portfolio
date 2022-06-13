@@ -1,167 +1,178 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
 
 /***** Variables *****/
-:root{
-    --primary-clr: #FF8600;
+:root {
+	--primary-clr: #ff8600;
 }
 
 /***** Global Styles *****/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: Comfortaa;
+	font-family: Comfortaa;
 }
 
-li, a{
-    list-style: none;
-    text-decoration: none;
-    text-transform: uppercase;
+li,
+a {
+	list-style: none;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
-h1, h2, h3, h4, h5, h6, p{
-    margin-bottom: 20px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 20px;
 }
-.btn{
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: var(--primary-clr);
-    font-size: 12px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    color: black;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+.btn {
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: var(--primary-clr);
+	font-size: 12px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	color: black;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 .btn a {
-    color: black;
+	color: black;
 }
 
-.btn:hover{
-    background-color: #dd7600;
-    transition: all 0.5s ease;
+.btn:hover {
+	background-color: #dd7600;
+	transition: all 0.5s ease;
 }
-
 
 /***** Navbar *****/
 nav {
-    display: flex;
-    justify-content:space-between;
-    height: 9vh;
-    width: 100vw;
-    
-    /* margin: 20px; */
-    /* background-color: rgba(0,0,0,0.4); */
+	display: flex;
+	justify-content: space-between;
+    padding: 20px 0;
+	/* height: 9vh;
+	width: 99vw; */
+
+	/* margin: 20px; */
+	/* background-color: rgba(0,0,0,0.4); */
 }
 nav a {
-    color: #fff;
+	color: #fff;
 }
 .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
 }
 
-.nav-links{
-    display: flex;
-    /* width: 33%; */
-    align-items: center;
-    justify-content: space-around;
+.nav-links {
+	display: flex;
+	/* width: 33%; */
+	align-items: center;
+	justify-content: space-around;
 }
-.nav-links a:hover{
-    color:#FF8600;
-    transition: all 0.3s;
-}
-
-.social-links{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.nav-links a:hover {
+	color: #ff8600;
+	transition: all 0.3s;
 }
 
-.nav-link, .social-link {
-    margin: 0 0.625rem;
+.social-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
+
+.nav-link,
+.social-link {
+	margin: 0 0.625rem;
+}
+.fa:hover {
+	color: var(--primary-clr);
+	transition: all 0.3s;
+}
+/* .social-link{
+    margin-right: 20px;
+} */
 /***** Hero *****/
-.hero{
-    background: url('./pexels-christina-morillo-1181244.jpg');
-    height: 100vh;
-    width: 100vw;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    top: 0%;
-    left: 0%;
-    
+.hero {
+	background-image: url("./pexels-christina-morillo-1181244.jpg");
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
 }
-.hero-container{
-    height: 100%;
-    width: 100%;
-    background: rgba(0,0,0,0.7);
+.hero-container {
+	height: 100%;
+	width: 100%;
+	/* background: rgba(0, 0, 0, 0.7); */
 }
-.hero-text{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.hero-text {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
-.hero-text h2{
-    font-size:  60px;
-    color: #fff;
-    text-transform: uppercase;
+.hero-text h2 {
+	font-size: 60px;
+	color: #fff;
+	text-transform: uppercase;
 }
-.hero-text h4{
-    color: #fff;
-    text-transform: uppercase;
+.hero-text h4 {
+	color: #fff;
+	text-transform: uppercase;
 }
-.hero-text span{
-    color: var(--primary-clr);
+.hero-text span {
+	color: var(--primary-clr);
 }
+
 /***** About Section *****/
-.about{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin-top:  50px;
-    
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
 }
 
-.about-img{
-    width: 450px;
-    height: 350px;
-    background-image: url('./pexels-christina-morillo-1181244.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-right: 30px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
-    border-radius: 5px;
+.about-img {
+	width: 450px;
+	height: 350px;
+	background-image: url("./pexels-christina-morillo-1181244.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-right: 30px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
 }
 
-.about-text{
-    width: 450px;
-    height: 350px;
-    margin-left: 30px;
+.about-text {
+	width: 450px;
+	height: 350px;
+	margin-left: 30px;
 }
 
-.about-text h2{
-    color: var(--primary-clr);
-    margin-top: 30px;
+.about-text h2 {
+	color: var(--primary-clr);
+	margin-top: 30px;
 }
-.about-text h3{
-    text-transform: uppercase;
-    font-weight: 700;
+.about-text h3 {
+	text-transform: uppercase;
+	font-weight: 700;
 }
-.about-text p{
-    text-align: justify;
-    text-justify: inter-word;
+.about-text p {
+	text-align: justify;
+	text-justify: inter-word;
 }
