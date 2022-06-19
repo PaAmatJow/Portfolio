@@ -58,7 +58,7 @@ p {
 nav {
 	display: flex;
 	justify-content: space-between;
-    padding: 20px 0;
+	padding: 20px 10px;
 	/* height: 9vh;
 	width: 99vw; */
 
@@ -110,7 +110,7 @@ nav a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: rgba(0, 0, 0, 0.7);
-    background-blend-mode: overlay;
+	background-blend-mode: overlay;
 }
 .hero-container {
 	height: 100%;
@@ -144,6 +144,7 @@ nav a {
 	justify-content: center;
 	align-items: center;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .about-img {
@@ -175,4 +176,129 @@ nav a {
 .about-text p {
 	text-align: justify;
 	text-justify: inter-word;
+}
+
+/***** Skills Section *****/
+.skills {
+	background-image: url("./pexels-pixabay-39284.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: rgba(255, 255, 255, 0.7);
+	background-blend-mode: overlay;
+	height: 70vh;
+}
+.skills-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills-header {
+	text-align: center;
+	padding: 40px 0;
+}
+
+.skills-header h2 {
+	color: var(--primary-clr);
+	margin-bottom: 10px;
+	text-shadow: 0px 1px 1px #3d3d3d;
+}
+
+.skills-header h4 {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.skills-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills-content div {
+	width: 300px;
+	height: 250px;
+	padding: 10px;
+	background-color: #fff;
+	margin: 0 10px;
+	border-radius: 20px;
+	box-shadow: 0px -1px 21px -4px rgba(0, 0, 0, 0.75);
+	text-align: center;
+}
+.skills-content div i {
+	font-size: 30px;
+	padding: 20px;
+	color: var(--primary-clr);
+}
+.card h2 {
+	margin-bottom: 10px;
+}
+.card p {
+	font-size: 16px;
+}
+
+/* i cant targrt the h2 and p in the skills section */
+
+/***** Services Section *****/
+.services{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.services header {
+	padding: 40px 0;
+	text-align: center;
+}
+
+.services header h2 {
+	color: var(--primary-clr);
+	margin-bottom: 10px;
+	text-shadow: none;
+}
+
+.services header h4 {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.services-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 60px;
+}
+
+.services-container div{
+	width: 280px;
+	height: 220px;
+	padding: 10px;
+	background-color: #fff;
+	margin: 0 10px;
+	border-radius: 10px;
+	box-shadow: 0px -1px 21px -4px rgba(0, 0, 0, 0.75);
+	text-align: center;
+}
+
+.services-container h2{
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-size:  22px;
+}
+.stubborn-btn{
+	margin-top: 26px;
+}
+.services .btn{
+	border: 2px solid var(--primary-clr);
+	background-color: #fff;
+	color: var(--primary-clr);
+	cursor: pointer;
+	box-shadow: none;
+}
+
+.services .btn:hover{
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
